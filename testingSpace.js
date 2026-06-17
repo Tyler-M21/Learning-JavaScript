@@ -1,5 +1,13 @@
-//Function 1
-function me(height, color){
-    console.log("I am " + height + " and " + color)
+function cleanNames(studentNames){
+    return [...new Set(
+        map(name => name.trim()),
+        filter(name => name !== ""),
+        map(name => name.replace(/\d+/g, "")),
+        filter(name => name !== "")
+    )].sort();
 }
-me("short", "darkSkinned")
+
+const studentName = ["John", "Mary",  "John",  "",  "Peter123",  "  Alice  ",  "Mary",  "Tom45",  "   "]
+
+const clean =cleanNames(studentName)
+console.log(clean)
