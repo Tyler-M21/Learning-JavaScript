@@ -24,3 +24,13 @@ while (e != Infinity) {
     e=e*5
     console.log(e * e)
 }
+
+let vb = BigInt(1234567890123456789123456)
+console.log(vb)
+
+let com = ["Addison Rae ", "Billie Jean ", "Maria"]
+com = undefined
+console.log(com)
+
+const jj = 'I am called "Johnny"'
+console.log(jj)
